@@ -1,0 +1,18 @@
+{
+"name": "ElvenBot-MD",
+"website": "https://github.com/HardGamersTEAM",
+"description": "Super Bot De WhatsApp",
+"repository": "https://github.com/HardGamersTEAM/ElvenBot-MD",
+"logo": "https://i.ibb.co/HGqYPbf/logo-color.png",
+"success_url": "https://github.com/HardGamersTEAM/ElvenBot-MD",
+"keywords": [
+"nodejs", "heroku", "bot", "spanish", "english", "indonesian", "arab", "portuguese", "italian", "french", "whatsapp",
+"termux", "superbot", "multi-device", "md", "official", "javascript", "luffy"],
+"image": "heroku/nodejs",
+"buildpacks": [
+{ "url": "heroku/nodejs" },
+{ "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest" },
+{ "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git" },
+{ "url": "https://github.com/bogini/heroku-buildpack-graphicsmagick" }    
+]
+}
