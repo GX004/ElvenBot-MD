@@ -14,9 +14,9 @@ handler.before = async (m, { conn }) => {
   try {
     conn.sendPresenceUpdate('composing', m.chat);
 
-    const bk9ApiUrl = 'https://bk9.fun/ai/gpt4?q=';
+    const GXApiUrl = 'https://bk9.fun/ai/gpt4?q=';
     const query = encodeURIComponent(text || '');
-    const response = await fetch(bk9ApiUrl + query);
+    const response = await fetch(GXApiUrl + query);
     const data = await response.json();
 
     if (data.status && data.BK9) {
@@ -29,4 +29,6 @@ handler.before = async (m, { conn }) => {
     throw new Error('An error occurred while processing your request.');
   }
 }}
+handler.tags = ['ai'];
+handler.help = ['gpt4'];
 export default handler;
